@@ -40,6 +40,7 @@
         }
         nav a:hover{
             border-radius: 5px;
+            padding: 3px;
             background: lightgray;
             color: black;  
         }
@@ -47,24 +48,21 @@
         header.h{
            
             text-align: center;
-            margin: 20px;
+            margin: 30px;
             background: rgb(161, 184, 184);
             color: black;
-            padding: 10px;
-            padding-left: 50px;
-            padding-right: 50px;
+            padding: 20px;
+            padding-left: 80px;
+            padding-right: 80px;
             padding-bottom: 30px;
             border-radius: 20px;
             animation: zoomIn 1s ease-in-out;
             
             .b{
                 color: black;
-                padding:5px;
-                text-align:center;
                 border-radius: 5px;
                 background: rgb(110, 132, 230);
-                justify-content:center;
-                
+                padding: 10px;
             }
             .b:hover{
             
@@ -82,79 +80,82 @@
             }
         }
         main{
-            text-align:center;
             div{
-                text-align:center;
-                justify-content:center;
+                justify-content: space-around;
                 padding: 2px;
                 border-radius: 5px;
-                width:80%;
             }
         }
         h2{
             margin-bottom: 40px;
         }
         div.c{
-             justify-content: center;
+            display: flex;
+            justify-content: space-around;
             .card{
                 background-color: honeydew; 
                 height: auto;
-                width: 70%;
+                width: 300px;
                 padding: 20px;
                 margin: 2px;
                 border-radius: 10px;
                 transition: 0.3s;
+                animation: bounceIn 1s ease-in-out;
                 }
-        }
-      .card:hover{
-            box-shadow: 2px 2px 5px gray;
-            transform: scale(1.05);
-      }
+            }
+            @keyframes bounceIn {
+                from {
+                    transform: scale(0.5);
+                    opacity: 0;
+                }
+                to {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+            .card:hover{
+                box-shadow: 2px 2px 5px gray;
+                transform: scale(1.05);
+            }
            
-     .u{
-         size-adjust: inherit;
-      }
-    h4{
-         font-size: 20px;
-    }
-    aside{ 
-        width:auto;
-        margin: 10px;
-    }
-    .o{
-        display:flex;
-        gap:10px;
-        justify-content:space-evenly;
-        height:auto;
-        width:auto;      
-        background:lavender;
-        animation: zoomIn 1s ease-in-out;
-        .f{
-            color: rgb(9, 9, 100);
-            font-size: larger;
-            font-weight: bolder;
+            .u{
+                size-adjust: inherit;
+            }
+            h4{
+                font-size: 20px;
+            }
+            .o{
+            display:flex;
+            margin: 20px;
+            background:lavender;
+            justify-content: space-around;
+            animation: zoomIn 1s ease-in-out;
+            .f{
+                color: rgb(9, 9, 100);
+                font-size: larger;
+                font-weight: bolder;
+            }
         }
-     }
        
-    .o:hover{
-            box-shadow: 2px 2px 5px gray;
-            transform: scale(1.05);
-    }
-    footer{
-        background: darkgray;
-        font-size: larger;
-        color: black;
-        padding: 20px;
-        animation: linearFade 2s ease-in-out;
-    }
-    @keyframes linearFade {
-        from {
+        .o:hover{
+                box-shadow: 2px 2px 5px gray;
+                transform: scale(1.05);
+            }
+        footer{
+            background: darkgray;
+            font-size: larger;
+            color: black;
+            padding: 20px;
+            animation: linearFade 2s ease-in-out;
+        }
+        @keyframes linearFade {
+            from {
                 opacity: 0;
-        }
-        to {
+            }
+            to {
                 opacity: 1;
+            }
         }
-    }
     </style>
 </head>
 <body>
@@ -176,36 +177,35 @@
             </p><br>
             <a class="b" href="course.html">Explore Courses</a>
         </header>
-    
-        <h2>Why Choose LearnHub?</h2>
-        <div>    
+        
+            <h2>Why Choose LearnHub?</h2>
+            <div>
             <div class="c">
-                    <div class="card">
-                        <p class="u">&#128100;&#127822;&#128218;</p>
-                        <h4>Expert Instructions</h4> 
-                        <p>
-                            Learn from industry professionals with years of experience
-                        </p>
-                    </div>
-    
-                    <div class="card">
-                        <p class="u">&#9200;</p>
-                        <h4>Learn at Yout Pace</h4> 
-                        <p>
-                            Study anytime,anywhere with lifetime access to courses
-                        </p>
-                    </div>
-    
-                    <div class="card">
-                        <p class="u">&#127891;</p>
-                        <h4>Get Certified</h4> 
-                        <p>
-                            Earn certificates upon completion to showcase your skills
-                        </p>
-                    </div>
+                <div class="card">
+                    <p class="u">&#128100;&#127822;&#128218;</p>
+                    <h4>Expert Instructions</h4> 
+                    <p>
+                        Learn from industry professionals with years of experience
+                    </p>
+                </div>
+
+                <div class="card">
+                    <p class="u">&#9200;</p>
+                    <h4>Learn at Yout Pace</h4> 
+                    <p>
+                        Study anytime,anywhere with lifetime access to courses
+                    </p>
+                </div>
+
+                <div class="card">
+                    <p class="u">&#127891;</p>
+                    <h4>Get Certified</h4> 
+                    <p>
+                        Earn certificates upon completion to showcase your skills
+                    </p>
+                </div>
             </div>
         </div>
-        
 
         <aside>
             <div class="o">
@@ -238,44 +238,4 @@
         | Phone:+91 8758592992
     </footer>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
